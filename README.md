@@ -1,4 +1,6 @@
-# BowlingKataJavaTDD
+# Bowling Kata Java TDD
+
+Step by step implementation of the Uncle Bob TDD kata with sample instructions for reference.
 
 # Requirements
 

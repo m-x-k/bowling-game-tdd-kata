@@ -13,7 +13,12 @@ public class BowlingGame {
         int score = 0;
         int frameindex = 0;
         for (int frame = 0; frame < 10; frame++) {
-            if (isSpare(frameindex))  // spare
+            if (rolls[frameindex] == 10)  // strike
+            {
+                score += 10 + rolls[frameindex + 1] + rolls[frameindex + 2];
+                frameindex++;
+            }
+            else if (isSpare(frameindex))  // spare
             {
                 score += 10 + rolls[frameindex + 2];
                 frameindex += 2;
